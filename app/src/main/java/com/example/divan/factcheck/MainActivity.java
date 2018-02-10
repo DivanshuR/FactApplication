@@ -67,7 +67,6 @@ public class MainActivity extends AppCompatActivity {
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
 
-
         mAdView.setAdListener(new AdListener(){
             @Override
             public void onAdLoaded() {
