@@ -13,12 +13,13 @@
     android:layout_width="match_parent"
     android:id="@+id/card"
     android:layout_height="120dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="10dp"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
     android:layout_centerHorizontal="true"
     android:elevation="5dp"
     app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="#007eaf"
         >
 
     <RelativeLayout
@@ -75,6 +76,7 @@
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
         android:id="@+id/card1"
+        app:cardBackgroundColor="#0e977d"
         android:layout_below="@+id/card"
         app:cardCornerRadius="10dp">
 
@@ -92,8 +94,7 @@
                 android:layout_marginEnd="24dp"
                 android:layout_toStartOf="@+id/button1"
                 app:srcCompat="@drawable/date2"
-                android:layout_marginTop="2dp"
-                android:layout_marginBottom="2dp"/>
+                />
 
             <Button
                 android:id="@+id/button1"
@@ -133,6 +134,7 @@
         android:layout_marginRight="5dp"
         android:id="@+id/card2"
         android:layout_below="@+id/card1"
+        app:cardBackgroundColor="#dc5505"
         app:cardCornerRadius="10dp">
 
         <RelativeLayout
@@ -149,8 +151,7 @@
                 android:layout_marginEnd="24dp"
                 android:layout_toStartOf="@+id/button3"
                 app:srcCompat="@drawable/math"
-                android:layout_marginTop="2dp"
-                android:layout_marginBottom="2dp"/>
+                />
 
             <Button
                 android:id="@+id/button3"
@@ -189,6 +190,7 @@
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
         android:layout_below="@+id/card2"
+        app:cardBackgroundColor="#e99c01"
         app:cardCornerRadius="10dp">
 
         <RelativeLayout
@@ -205,8 +207,7 @@
                 android:layout_marginEnd="24dp"
                 android:layout_toStartOf="@+id/button4"
                 app:srcCompat="@drawable/year"
-                android:layout_marginTop="2dp"
-                android:layout_marginBottom="2dp"/>
+                />
 
             <Button
                 android:id="@+id/button4"

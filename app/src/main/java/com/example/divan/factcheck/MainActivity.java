@@ -1,29 +1,65 @@
 package com.example.divan.factcheck;
 
 
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
-
 
 public class MainActivity extends AppCompatActivity {
 
     private AdView mAdView;
     private Button trivia_btn,math_btn,year_btn,date_btn;
-    private BottomNavigationView bottomNavigationView;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //Checking Connection
+//        ConnectivityManager cn = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+//        NetworkInfo nf = cn.getActiveNetworkInfo();
+//        if (nf != null && nf.isConnected() == true) {
+//            Toast.makeText(this, "Network Available", Toast.LENGTH_LONG).show();
+//        } else {
+//            Toast.makeText(this, "Check your internet connection.", Toast.LENGTH_LONG).show();
+//        }
+//
+
+        ConnectivityManager connec
+                =(ConnectivityManager)getSystemService(getBaseContext().CONNECTIVITY_SERVICE);
+
+        // Check for network connections
+        if ( connec.getNetworkInfo(0).getState() ==
+                android.net.NetworkInfo.State.CONNECTED ||
+                connec.getNetworkInfo(0).getState() ==
+                        android.net.NetworkInfo.State.CONNECTING ||
+                connec.getNetworkInfo(1).getState() ==
+                        android.net.NetworkInfo.State.CONNECTING ||
+                connec.getNetworkInfo(1).getState() == android.net.NetworkInfo.State.CONNECTED ) {
+            Toast.makeText(this, " Internet Connected ", Toast.LENGTH_LONG).show();
+
+        }else if (
+                connec.getNetworkInfo(0).getState() ==
+                        android.net.NetworkInfo.State.DISCONNECTED ||
+                        connec.getNetworkInfo(1).getState() ==
+                                android.net.NetworkInfo.State.DISCONNECTED  ) {
+            Toast.makeText(this, " Internet Not Connected ", Toast.LENGTH_LONG).show();
+        }
+
+
 
 
         mAdView = findViewById(R.id.adView);
@@ -47,11 +83,13 @@ public class MainActivity extends AppCompatActivity {
                         break;
 
                     case R.id.ic_share:
-                        Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND);
-                        sharingIntent.setType("text/plain");
-                        sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "APP NAME (Open it in Google Play Store to Download the Application)");
 
-                        startActivity(Intent.createChooser(sharingIntent, "Share via"));
+                        Intent sendIntent = new Intent();
+                        sendIntent.setAction(Intent.ACTION_SEND);
+                        sendIntent.putExtra(Intent.EXTRA_TEXT,
+                                "Hey check out my app on Google Play Store : FactCheck");
+                        sendIntent.setType("text/plain");
+                        startActivity(sendIntent);
                         break;
                 }
                 return true;
@@ -83,6 +121,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+                Intent intent = new Intent(MainActivity.this,DateActivity.class);
+                startActivity(intent);
             }
         });
     }
@@ -92,6 +132,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+                Intent intent = new Intent(MainActivity.this,YearActivity.class);
+                startActivity(intent);
             }
         });
 
@@ -102,8 +144,33 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+                Intent intent = new Intent(MainActivity.this,MathActivity.class);
+                startActivity(intent);
+
             }
         });
+    }
+
+
+
+    @Override
+    public void onBackPressed () {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setMessage("Are you sure you want to Exit?")
+                .setCancelable(false)
+                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        finish();
+                    }
+                })
+                .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        dialog.cancel();
+                    }
+                });
+        AlertDialog alert = builder.create();
+        alert.show();
+
     }
 }
 
