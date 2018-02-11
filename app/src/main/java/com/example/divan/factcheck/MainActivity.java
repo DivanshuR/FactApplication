@@ -119,7 +119,7 @@ public class MainActivity extends AppCompatActivity {
                         Intent sendIntent = new Intent();
                         sendIntent.setAction(Intent.ACTION_SEND);
                         sendIntent.putExtra(Intent.EXTRA_TEXT,
-                                "Hey check out my app on Google Play Store : FactCheck");
+                                "Want to know the real meaning behind every number, Just Download FactCheck from Google Play Store : ");
                         sendIntent.setType("text/plain");
                         startActivity(sendIntent);
                         break;
