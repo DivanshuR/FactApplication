@@ -20,7 +20,7 @@ public class FeedbackActivity extends AppCompatActivity {
         View aboutPage = new AboutPage(this)
                 .isRTL(false)
                 .setImage(R.drawable.doubt)
-                .setDescription("Feedback")
+                .setDescription("Give Us Feedback")
                 .addGroup("Any Suggestions?")
                 .addEmail("divanshu.rohatgi6@gmail.com")
                 .addPlayStore("com.example.divan.factcheck")

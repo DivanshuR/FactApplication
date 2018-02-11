@@ -20,7 +20,7 @@ public class AboutActivity extends AppCompatActivity {
         View aboutPage = new AboutPage(this)
                 .isRTL(false)
                 .setImage(R.drawable.doubt)
-                .setDescription("Interesting Facts")
+                .setDescription("Interesting Facts About Numbers")
                 .addItem(new Element().setTitle("Version 1.0"))
                 .addGroup("Connect with us")
                 .addEmail("divanshu.rohatgi6@gmail.com")

@@ -37,13 +37,13 @@ public class TriviaActivity extends AppCompatActivity {
                 final String editTextValue = triviatext.getText().toString();
 
 
-                if (editTextValue.isEmpty()) {
+                if (editTextValue.isEmpty()||editTextValue.equals("#")||editTextValue.equals("@")) {
 
 
                     //Toast.makeText(getApplicationContext(),"Please Enter number ",Toast.LENGTH_SHORT).show();
 
                     Random rand = new Random();
-                    int number = rand.nextInt();
+                    int number = rand.nextInt(1000);
                     String myString = String.valueOf(number);
 
                     //Even if the editText is empty will generate random facts.
