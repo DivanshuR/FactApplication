@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/relax"
+    android:background="#2A3132"
     tools:context="com.example.divan.factcheck.YearActivity">
 
 
@@ -24,7 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/yearText"
         android:text="* Leave Blank for Random Facts"
-        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
         android:layout_marginRight="30dp"
         android:textColor="@color/colorWhite"
         android:layout_marginTop="5dp"
@@ -52,7 +52,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/btnyear"
-        android:background="@color/colorWhite"
+        android:background="#336B87"
         android:layout_marginTop="50dp"
         android:layout_marginLeft="2dp"
         android:layout_marginRight="2dp"
@@ -65,8 +65,9 @@
             android:layout_width="match_parent"
             android:layout_height="250dp"
             android:id="@+id/show"
-            android:textColor="#000"
-            android:layout_marginTop="2dp"
+            android:textColor="#fff"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:gravity="center_vertical|center_horizontal"
             android:padding="20dp"
             android:textAllCaps="false"
