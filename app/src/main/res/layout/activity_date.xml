@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#505160"
+    android:background="#404486"
     tools:context="com.example.divan.factcheck.DateActivity">
 
     <EditText
