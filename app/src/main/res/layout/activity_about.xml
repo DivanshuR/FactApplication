@@ -6,4 +6,51 @@
     tools:context="com.example.divan.factcheck.AboutActivity">
 
 
+
+    <!--<de.hdodenhof.circleimageview.CircleImageView-->
+        <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+        <!--android:id="@+id/profile_image"-->
+        <!--android:layout_width="196dp"-->
+        <!--android:layout_height="196dp"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="50dp"-->
+        <!--android:src="@drawable/profile"-->
+        <!--app:civ_border_width="2dp"-->
+        <!--app:civ_border_color="#FF000000"/>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/textView2"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/profile_image"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="22dp"-->
+        <!--android:textStyle="bold"-->
+        <!--android:gravity="center"-->
+        <!--android:textSize="22sp"-->
+        <!--android:textColor="#000"-->
+        <!--android:text="Divanshu Rohatgi" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/textView5"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/textView2"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="3dp"-->
+        <!--android:text="@string/profile_details"-->
+        <!--android:textAlignment="textStart"-->
+        <!--android:padding="10dp"-->
+        <!--android:textSize="20sp"-->
+        <!--android:textColor="#4d4949"/>-->
+
+    <!--<Space-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:pointerIcon="arrow"-->
+        <!--android:layout_below="@+id/textView5"-->
+        <!--android:layout_marginTop="5dp" />-->
+
+
 </RelativeLayout>

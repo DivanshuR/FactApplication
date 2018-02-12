@@ -47,7 +47,6 @@
             android:layout_marginBottom="7dp"
             android:layout_marginEnd="30dp"
             android:text="@string/explore_btn"
-            android:onClick="triviaBtn"
             android:textColor="#ffffff"
             android:background="@drawable/shape" />
 
@@ -104,7 +103,6 @@
                 android:layout_marginBottom="7dp"
                 android:layout_marginEnd="30dp"
                 android:text="@string/explore_btn"
-                android:onClick="dateBtn"
                 android:textColor="#ffffff"
                 android:background="@drawable/shape" />
 
@@ -161,7 +159,6 @@
                 android:layout_marginBottom="7dp"
                 android:layout_marginEnd="30dp"
                 android:text="@string/explore_btn"
-                android:onClick="mathBtn"
                 android:textColor="#ffffff"
                 android:background="@drawable/shape" />
 
@@ -217,7 +214,6 @@
                 android:layout_marginBottom="7dp"
                 android:layout_marginEnd="30dp"
                 android:text="@string/explore_btn"
-                android:onClick="yearBtn"
                 android:textColor="#ffffff"
                 android:background="@drawable/shape" />
 
