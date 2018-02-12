@@ -15,7 +15,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="32dp"
         android:background="@drawable/text_shape"
-        android:hint="Search Year Facts : YYYY"
+        android:hint="Search Year Facts"
         android:paddingStart="15dp"
         android:textColorHint="#000" />
 
