@@ -129,13 +129,18 @@ public class MainActivity extends AppCompatActivity {
         });
 
         date_btn = findViewById(R.id.button1);
+
+        date_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(MainActivity.this,DateActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
         trivia_btn = findViewById(R.id.button2);
-        math_btn = findViewById(R.id.button3);
-        year_btn = findViewById(R.id.button4);
-
-    }
-
-    public void triviaBtn(View view) {
 
         trivia_btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -146,20 +151,22 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-    }
 
-    public void dateBtn(View view) {
-        date_btn.setOnClickListener(new View.OnClickListener() {
+
+        math_btn = findViewById(R.id.button3);
+
+        math_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(MainActivity.this,DateActivity.class);
+                Intent intent = new Intent(MainActivity.this,MathActivity.class);
                 startActivity(intent);
+
             }
         });
-    }
 
-    public void yearBtn(View view) {
+        year_btn = findViewById(R.id.button4);
+
         year_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -170,20 +177,6 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
-
-    public void mathBtn(View view) {
-        math_btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent intent = new Intent(MainActivity.this,MathActivity.class);
-                startActivity(intent);
-
-            }
-        });
-    }
-
-
 
     @Override
     public void onBackPressed () {

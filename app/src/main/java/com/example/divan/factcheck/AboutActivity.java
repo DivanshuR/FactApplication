@@ -22,10 +22,11 @@ public class AboutActivity extends AppCompatActivity {
                 .setImage(R.drawable.doubt)
                 .setDescription("Interesting Facts About Numbers")
                 .addItem(new Element().setTitle("Version 1.0"))
-                .addGroup("Connect with us")
-                .addEmail("divanshu.rohatgi6@gmail.com")
+                .addGroup("Connect with the Developer")
+                .addEmail("rohatgideveloper@gmail.com")
                 .addFacebook("divanshu.rohatgi6")
                 .addInstagram("divanshurohatgi")
+                .addItem(new Element().setTitle("More Applications Coming Soon..."))
                 .create();
 
         setContentView(aboutPage);
