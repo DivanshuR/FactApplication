@@ -1,4 +1,4 @@
-package com.example.divan.factcheck;
+package com.rohatgi.developer.factcheck;
 
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
@@ -17,24 +17,24 @@ import com.android.volley.toolbox.Volley;
 
 import java.util.Random;
 
-public class TriviaActivity extends AppCompatActivity {
+public class MathActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_trivia);
+        setContentView(R.layout.activity_math);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         final TextView show=  findViewById(R.id.show);
-        final EditText triviatext=  findViewById(R.id.triviaText);
-        final Button btntrivia=  findViewById(R.id.btntrivia);
+        final EditText mathtext=  findViewById(R.id.mathText);
+        final Button btnmath=  findViewById(R.id.btnmath);
 
 
-        btntrivia.setOnClickListener(new View.OnClickListener() {
+        btnmath.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                final String editTextValue = triviatext.getText().toString();
+                final String editTextValue = mathtext.getText().toString();
 
 
                 if (editTextValue.isEmpty()||editTextValue.equals("#")||editTextValue.equals("@")) {
@@ -49,7 +49,7 @@ public class TriviaActivity extends AppCompatActivity {
                     //Even if the editText is empty will generate random facts.
                     // Instantiate the RequestQueue.
                     RequestQueue queue = Volley.newRequestQueue(getApplication());
-                    String url = "http://numbersapi.com/" + number + "/trivia";
+                    String url = "http://numbersapi.com/" + number + "/math";
 
 // Request a string response from the provided URL.
                     StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
@@ -73,7 +73,7 @@ public class TriviaActivity extends AppCompatActivity {
 
                     // Instantiate the RequestQueue.
                     RequestQueue queue = Volley.newRequestQueue(getApplication());
-                    String url = "http://numbersapi.com/" + editTextValue + "/trivia";
+                    String url = "http://numbersapi.com/" + editTextValue + "/math";
 
 // Request a string response from the provided URL.
                     StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
@@ -99,7 +99,7 @@ public class TriviaActivity extends AppCompatActivity {
         });
 
 
+
+
     }
-
-
 }

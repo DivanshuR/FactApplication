@@ -1,4 +1,4 @@
-package com.example.divan.factcheck;
+package com.rohatgi.developer.factcheck;
 
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
@@ -17,24 +17,25 @@ import com.android.volley.toolbox.Volley;
 
 import java.util.Random;
 
-public class MathActivity extends AppCompatActivity {
+public class YearActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_math);
+        setContentView(R.layout.activity_year);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
+
         final TextView show=  findViewById(R.id.show);
-        final EditText mathtext=  findViewById(R.id.mathText);
-        final Button btnmath=  findViewById(R.id.btnmath);
+        final EditText yeartext=  findViewById(R.id.yearText);
+        final Button btnyear=  findViewById(R.id.btnyear);
 
 
-        btnmath.setOnClickListener(new View.OnClickListener() {
+        btnyear.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                final String editTextValue = mathtext.getText().toString();
+                final String editTextValue = yeartext.getText().toString();
 
 
                 if (editTextValue.isEmpty()||editTextValue.equals("#")||editTextValue.equals("@")) {
@@ -49,7 +50,7 @@ public class MathActivity extends AppCompatActivity {
                     //Even if the editText is empty will generate random facts.
                     // Instantiate the RequestQueue.
                     RequestQueue queue = Volley.newRequestQueue(getApplication());
-                    String url = "http://numbersapi.com/" + number + "/math";
+                    String url = "http://numbersapi.com/" + number + "/year";
 
 // Request a string response from the provided URL.
                     StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
@@ -73,7 +74,7 @@ public class MathActivity extends AppCompatActivity {
 
                     // Instantiate the RequestQueue.
                     RequestQueue queue = Volley.newRequestQueue(getApplication());
-                    String url = "http://numbersapi.com/" + editTextValue + "/math";
+                    String url = "http://numbersapi.com/" + editTextValue + "/year";
 
 // Request a string response from the provided URL.
                     StringRequest stringRequest = new StringRequest(Request.Method.GET, url,

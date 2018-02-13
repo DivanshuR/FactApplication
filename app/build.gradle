@@ -14,7 +14,7 @@ android {
     }
     compileSdkVersion 26
     defaultConfig {
-        applicationId "com.example.divan.factcheck"
+        applicationId "com.rohatgi.developer.factcheck"
         minSdkVersion 21
         targetSdkVersion 26
         versionCode 1

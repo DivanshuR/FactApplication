@@ -1,4 +1,4 @@
-package com.example.divan.factcheck;
+package com.rohatgi.developer.factcheck;
 
 import org.junit.Test;
 

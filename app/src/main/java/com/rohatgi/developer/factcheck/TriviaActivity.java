@@ -1,4 +1,4 @@
-package com.example.divan.factcheck;
+package com.rohatgi.developer.factcheck;
 
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
@@ -17,25 +17,24 @@ import com.android.volley.toolbox.Volley;
 
 import java.util.Random;
 
-public class DateActivity extends AppCompatActivity {
+public class TriviaActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_date);
+        setContentView(R.layout.activity_trivia);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
-
         final TextView show=  findViewById(R.id.show);
-        final EditText datetext=  findViewById(R.id.dateText);
-        final Button btndate=  findViewById(R.id.btndate);
+        final EditText triviatext=  findViewById(R.id.triviaText);
+        final Button btntrivia=  findViewById(R.id.btntrivia);
 
 
-        btndate.setOnClickListener(new View.OnClickListener() {
+        btntrivia.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                final String editTextValue = datetext.getText().toString();
+                final String editTextValue = triviatext.getText().toString();
 
 
                 if (editTextValue.isEmpty()||editTextValue.equals("#")||editTextValue.equals("@")) {
@@ -50,7 +49,7 @@ public class DateActivity extends AppCompatActivity {
                     //Even if the editText is empty will generate random facts.
                     // Instantiate the RequestQueue.
                     RequestQueue queue = Volley.newRequestQueue(getApplication());
-                    String url = "http://numbersapi.com/" + number + "/" + number + "/date";
+                    String url = "http://numbersapi.com/" + number + "/trivia";
 
 // Request a string response from the provided URL.
                     StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
@@ -74,7 +73,7 @@ public class DateActivity extends AppCompatActivity {
 
                     // Instantiate the RequestQueue.
                     RequestQueue queue = Volley.newRequestQueue(getApplication());
-                    String url = "http://numbersapi.com/" + editTextValue + "/date";
+                    String url = "http://numbersapi.com/" + editTextValue + "/trivia";
 
 // Request a string response from the provided URL.
                     StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
@@ -100,7 +99,7 @@ public class DateActivity extends AppCompatActivity {
         });
 
 
-
-
     }
+
+
 }

@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/sky"
-    tools:context="com.example.divan.factcheck.TriviaActivity">
+    tools:context="com.rohatgi.developer.factcheck.TriviaActivity">
 
     <EditText
         android:id="@+id/triviaText"

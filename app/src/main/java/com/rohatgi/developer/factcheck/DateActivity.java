@@ -1,4 +1,4 @@
-package com.example.divan.factcheck;
+package com.rohatgi.developer.factcheck;
 
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
@@ -17,25 +17,25 @@ import com.android.volley.toolbox.Volley;
 
 import java.util.Random;
 
-public class YearActivity extends AppCompatActivity {
+public class DateActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_year);
+        setContentView(R.layout.activity_date);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
 
         final TextView show=  findViewById(R.id.show);
-        final EditText yeartext=  findViewById(R.id.yearText);
-        final Button btnyear=  findViewById(R.id.btnyear);
+        final EditText datetext=  findViewById(R.id.dateText);
+        final Button btndate=  findViewById(R.id.btndate);
 
 
-        btnyear.setOnClickListener(new View.OnClickListener() {
+        btndate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                final String editTextValue = yeartext.getText().toString();
+                final String editTextValue = datetext.getText().toString();
 
 
                 if (editTextValue.isEmpty()||editTextValue.equals("#")||editTextValue.equals("@")) {
@@ -50,7 +50,7 @@ public class YearActivity extends AppCompatActivity {
                     //Even if the editText is empty will generate random facts.
                     // Instantiate the RequestQueue.
                     RequestQueue queue = Volley.newRequestQueue(getApplication());
-                    String url = "http://numbersapi.com/" + number + "/year";
+                    String url = "http://numbersapi.com/" + number + "/" + number + "/date";
 
 // Request a string response from the provided URL.
                     StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
@@ -74,7 +74,7 @@ public class YearActivity extends AppCompatActivity {
 
                     // Instantiate the RequestQueue.
                     RequestQueue queue = Volley.newRequestQueue(getApplication());
-                    String url = "http://numbersapi.com/" + editTextValue + "/year";
+                    String url = "http://numbersapi.com/" + editTextValue + "/date";
 
 // Request a string response from the provided URL.
                     StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
