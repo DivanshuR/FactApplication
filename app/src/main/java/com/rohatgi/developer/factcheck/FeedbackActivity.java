@@ -19,7 +19,7 @@ public class FeedbackActivity extends AppCompatActivity {
 
         View aboutPage = new AboutPage(this)
                 .isRTL(false)
-                .setImage(R.drawable.doubt)
+                .setImage(R.drawable.about)
                 .setDescription("Send Us Feedback")
                 .addGroup("Any Suggestions?")
                 .addEmail("rohatgideveloper@gmail.com")
