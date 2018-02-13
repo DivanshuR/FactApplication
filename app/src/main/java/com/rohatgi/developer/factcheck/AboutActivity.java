@@ -1,4 +1,4 @@
-package com.example.divan.factcheck;
+package com.rohatgi.developer.factcheck;
 
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;

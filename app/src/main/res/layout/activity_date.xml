@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#404486"
-    tools:context="com.example.divan.factcheck.DateActivity">
+    tools:context="com.rohatgi.developer.factcheck.DateActivity">
 
     <EditText
         android:id="@+id/dateText"
