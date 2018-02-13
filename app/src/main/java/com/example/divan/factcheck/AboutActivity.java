@@ -23,10 +23,10 @@ public class AboutActivity extends AppCompatActivity {
                 .setDescription("Interesting Facts About Numbers")
                 .addItem(new Element().setTitle("Version 1.0"))
                 .addGroup("Connect with the Developer")
-                .addEmail("rohatgideveloper@gmail.com")
                 .addFacebook("divanshu.rohatgi6")
                 .addInstagram("divanshurohatgi")
-                .addItem(new Element().setTitle("More Applications Coming Soon..."))
+                .addGitHub("DivanshuR")
+                
                 .create();
 
         setContentView(aboutPage);
