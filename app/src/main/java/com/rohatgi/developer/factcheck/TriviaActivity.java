@@ -1,12 +1,15 @@
 package com.rohatgi.developer.factcheck;
 
+import android.app.Activity;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -29,6 +32,15 @@ public class TriviaActivity extends AppCompatActivity {
         final EditText triviatext=  findViewById(R.id.triviaText);
         final Button btntrivia=  findViewById(R.id.btntrivia);
 
+
+        triviatext.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View v, boolean hasFocus) {
+                if (!hasFocus) {
+                    hideKeyboard(v);
+                }
+            }
+        });
 
         btntrivia.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -62,7 +74,7 @@ public class TriviaActivity extends AppCompatActivity {
                             }, new Response.ErrorListener() {
                         @Override
                         public void onErrorResponse(VolleyError error) {
-                            show.setText("Uh oh, we don't understand that or Check your Connection. ");
+                            show.setText(R.string.Error_Message);
                         }
                     });
 // Add the request to the RequestQueue.
@@ -86,7 +98,7 @@ public class TriviaActivity extends AppCompatActivity {
                             }, new Response.ErrorListener() {
                         @Override
                         public void onErrorResponse(VolleyError error) {
-                            show.setText("Uh oh, we don't understand that or Check your Connection. ");
+                            show.setText(R.string.Error_Message);
                         }
                     });
 // Add the request to the RequestQueue.
@@ -101,5 +113,15 @@ public class TriviaActivity extends AppCompatActivity {
 
     }
 
+    public void hideKeyboard(View v) {
 
+        try {
+            InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(Activity.INPUT_METHOD_SERVICE);
+            inputMethodManager.hideSoftInputFromWindow(v.getWindowToken(), 0);
+
+        } catch (NullPointerException exception) {
+
+            Toast.makeText(this, "Keyboard Hidding Error", Toast.LENGTH_SHORT).show();
+        }
+    }
 }

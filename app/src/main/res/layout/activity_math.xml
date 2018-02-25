@@ -4,6 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#063852"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
     tools:context="com.rohatgi.developer.factcheck.MathActivity">
 
     <EditText
@@ -14,8 +16,8 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="32dp"
         android:background="@drawable/text_shape"
-        android:hint="Search Math Facts"
-        android:paddingStart="15dp"
+        android:hint="Enter Number "
+        android:paddingLeft="16dp"
         android:textColorHint="#000" />
 
     <TextView
@@ -24,7 +26,7 @@
         android:layout_below="@+id/mathText"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="8dp"
-        android:text="* Leave Blank for Random Facts"
+        android:text="*Leave Blank for Random Facts"
         android:textColor="@color/colorWhite" />
 
 
@@ -42,36 +44,13 @@
         android:textAllCaps="false"
         android:layout_marginTop="40dp"/>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:id="@+id/show"
+        android:layout_below="@id/btnmath"/>
 
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/btnmath"
-        android:background="#007eaf"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
-        android:layout_marginBottom="10dp"
-        android:orientation="horizontal"
-        android:id="@+id/linearLayout">
-
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="250dp"
-            android:id="@+id/show"
-            android:textColor="#fff"
-            android:layout_marginLeft="10dp"
-            android:textAlignment="center"
-            android:layout_marginRight="10dp"
-            android:gravity="center_vertical|center_horizontal"
-            android:padding="20dp"
-            android:textAllCaps="false"
-            android:textSize="22sp"
-
-            />
-    </LinearLayout>
 
 </RelativeLayout>
