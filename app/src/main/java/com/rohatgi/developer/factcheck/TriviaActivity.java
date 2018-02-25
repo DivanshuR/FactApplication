@@ -62,7 +62,7 @@ public class TriviaActivity extends AppCompatActivity {
                             }, new Response.ErrorListener() {
                         @Override
                         public void onErrorResponse(VolleyError error) {
-                            show.setText("Uh oh, we don't understand that or Check your Connection. ");
+                            show.setText("Sorry.This App Only Understands Numbers.");
                         }
                     });
 // Add the request to the RequestQueue.
@@ -86,7 +86,7 @@ public class TriviaActivity extends AppCompatActivity {
                             }, new Response.ErrorListener() {
                         @Override
                         public void onErrorResponse(VolleyError error) {
-                            show.setText("Uh oh, we don't understand that or Check your Connection. ");
+                            show.setText("Sorry.This App Only Understands Numbers.");
                         }
                     });
 // Add the request to the RequestQueue.

@@ -15,7 +15,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.rohatgi.developer.factcheck.MainActivity">
+        <activity android:name="com.rohatgi.developer.factcheck.FrontActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -28,6 +28,7 @@
         <activity android:name="com.rohatgi.developer.factcheck.DateActivity" />
         <activity android:name="com.rohatgi.developer.factcheck.AboutActivity" />
         <activity android:name="com.rohatgi.developer.factcheck.FeedbackActivity" />
+        <activity android:name="com.rohatgi.developer.factcheck.MainActivity" />
     </application>
 
 </manifest>
