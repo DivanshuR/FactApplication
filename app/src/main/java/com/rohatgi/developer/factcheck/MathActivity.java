@@ -43,7 +43,7 @@ public class MathActivity extends AppCompatActivity {
                     //Toast.makeText(getApplicationContext(),"Please Enter number ",Toast.LENGTH_SHORT).show();
 
                     Random rand = new Random();
-                    int number = rand.nextInt(10000);
+                    int number = rand.nextInt(1000);
                     String myString = String.valueOf(number);
 
                     //Even if the editText is empty will generate random facts.
@@ -62,7 +62,7 @@ public class MathActivity extends AppCompatActivity {
                             }, new Response.ErrorListener() {
                         @Override
                         public void onErrorResponse(VolleyError error) {
-                            show.setText("Uh oh, we don't understand that or Check your Connection. ");
+                            show.setText("Sorry.This App Only Understands Numbers.");
                         }
                     });
 // Add the request to the RequestQueue.
@@ -86,7 +86,7 @@ public class MathActivity extends AppCompatActivity {
                             }, new Response.ErrorListener() {
                         @Override
                         public void onErrorResponse(VolleyError error) {
-                            show.setText("Uh oh, we don't understand that or Check your Connection. ");
+                            show.setText("Sorry.This App Only Understands Numbers.");
                         }
                     });
 // Add the request to the RequestQueue.
