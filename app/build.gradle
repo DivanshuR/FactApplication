@@ -17,9 +17,9 @@ android {
         applicationId "com.rohatgi.developer.factcheck"
         minSdkVersion 21
         targetSdkVersion 26
-        versionCode 1
+        versionCode 3
         multiDexEnabled true
-        versionName "1.0"
+        versionName "2.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
