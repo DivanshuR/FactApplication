@@ -21,8 +21,9 @@ public class FeedbackActivity extends AppCompatActivity {
                 .isRTL(false)
                 .setImage(R.drawable.about)
                 .setDescription("Send Us Feedback")
-                .addGroup("Any Suggestions?")
+                .addGroup("Mail Us")
                 .addEmail("rohatgideveloper@gmail.com")
+                .addGroup("Rate Us")
                 .addPlayStore("com.example.divan.factcheck")
                 .create();
 

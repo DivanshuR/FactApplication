@@ -4,6 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/sky"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
     tools:context="com.rohatgi.developer.factcheck.TriviaActivity">
 
     <EditText
@@ -14,8 +16,8 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="32dp"
         android:background="@drawable/text_shape"
-        android:hint="Search Trivia Facts Enter Numbers"
-        android:paddingStart="15dp"
+        android:hint="Enter Number"
+        android:paddingLeft="16dp"
         android:textColorHint="#000" />
 
 
@@ -45,7 +47,13 @@
         android:layout_marginTop="40dp"/>
 
 
-
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:id="@+id/show"
+        android:layout_below="@id/btntrivia"/>
 
 
 
