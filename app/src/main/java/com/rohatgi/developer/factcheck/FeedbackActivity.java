@@ -23,8 +23,9 @@ public class FeedbackActivity extends AppCompatActivity {
                 .setDescription("Send Us Feedback")
                 .addGroup("Mail Us")
                 .addEmail("rohatgideveloper@gmail.com")
-                .addGroup("Rate Us")
-                .addPlayStore("com.example.divan.factcheck")
+
+                .addGroup("Rate Us")            
+                .addPlayStore("com.rohatgi.developer.factcheck")
                 .create();
 
         setContentView(aboutPage);

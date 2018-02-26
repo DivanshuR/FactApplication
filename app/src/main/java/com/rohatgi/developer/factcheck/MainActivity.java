@@ -116,11 +116,13 @@ public class MainActivity extends AppCompatActivity {
 
                     case R.id.ic_share:
 
-                        Intent sendIntent = new Intent();
+                       Intent sendIntent = new Intent();
                         sendIntent.setAction(Intent.ACTION_SEND);
-                        sendIntent.putExtra(Intent.EXTRA_TEXT,
-                                "Want to know the real meaning behind every number, Just Download FactCheck from Google Play Store : ");
-                        sendIntent.setType("text/plain");
+                        sendIntent.putExtra(Intent.EXTRA_TEXT, "Want to know the real|hidden facts behind numbers.Install my app from Google Play Store:" +
+                                "https://play.google.com/store/apps/details?id=com.rohatgi.developer.factcheck&hl=en");
+                    sendIntent.setType("text/plain");
+//startActivity(Intent.createChooser(sendIntent, “Share via”));
+//startActivity(Intent.createChooser(sendIntent, getResources().getText(R.string.send_to)));
                         startActivity(sendIntent);
                         break;
                 }
