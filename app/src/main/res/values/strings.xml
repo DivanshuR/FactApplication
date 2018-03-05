@@ -10,6 +10,6 @@
     <string name="date">Date Fact</string>
 
     <string name="explore_btn">Explore</string>
-    <string name="frontText">Numbers-Encyclopedia lets you find interesting|hidden|meaningful facts about every number that exists.</string>
+    <string name="frontText">Numbers-Encyclopedia</string>
     <string name="Error_Message">Sorry.This App Only Understands Numbers.</string>
 </resources>

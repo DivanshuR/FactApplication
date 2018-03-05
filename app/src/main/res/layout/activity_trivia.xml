@@ -4,58 +4,81 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@drawable/sky"
+    android:background="@color/colorPrimaryDark"
     android:clickable="true"
     android:focusableInTouchMode="true"
     tools:context="com.rohatgi.developer.factcheck.TriviaActivity">
 
-    <EditText
-        android:id="@+id/triviaText"
-        android:layout_width="350dp"
-        android:layout_height="40dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="32dp"
-        android:background="@drawable/text_shape"
-        android:hint="Enter Number"
-        android:paddingLeft="16dp"
-        android:textColorHint="#000" />
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardElevation="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:cardCornerRadius="5dp"
+        android:layout_marginBottom="85dp"
+        app:cardBackgroundColor="#fff">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:hint="Enter Numbers"
+            android:id="@+id/triviaText"
+            android:inputType="phone"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#d64d5f"
+            android:layout_marginTop="80dp"
+            android:text="Search"
+            android:padding="5dp"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/btntrivia"
+            android:layout_gravity="center_horizontal"/>
 
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/triviaText"
-        android:text="* Leave Blank for Random Facts"
-        android:layout_centerHorizontal="true"
-        android:layout_marginRight="30dp"
-        android:textColor="@color/colorWhite"
-        android:layout_marginTop="5dp"
-        />
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="35dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="160dp"
+            app:cardElevation="50dp"
+            app:cardBackgroundColor="#3c76e1"
+            app:cardCornerRadius="15dp"
+            >
 
-    <Button
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:text="Search"
-        android:textColor="@color/colorWhite"
-        android:background="@drawable/text_shape"
-        android:backgroundTint="@color/colorAccent2"
-        android:layout_below="@+id/triviaText"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/btntrivia"
-        android:textSize="20sp"
-        android:textAllCaps="false"
-        android:layout_marginTop="40dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="fill_horizontal"
+                android:textSize="22sp"
+                android:id="@+id/show"
+                android:textColor="@color/colorWhite"
+                android:layout_margin="12dp"/>
+
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="130dp"
+            android:text="Click Search For Next Fact"
+            android:gravity="center_horizontal"
+            android:textColor="#000"
+            />
 
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
-        android:id="@+id/show"
-        android:layout_below="@id/btntrivia"/>
 
+    </android.support.v7.widget.CardView>
 
     <com.google.android.gms.ads.AdView
         android:id="@+id/adView"

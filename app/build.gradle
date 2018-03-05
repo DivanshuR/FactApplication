@@ -56,18 +56,12 @@ dependencies {
     compile 'com.github.medyo:android-about-page:1.2.2'
     compile 'com.github.florent37:diagonallayout:1.0.7'
     compile 'de.hdodenhof:circleimageview:2.2.0'
+    compile 'com.sdsmdg.harjot:rotatingtext:1.0.2'
+    compile 'me.wangyuwei:ParticleView:1.0.4'
+
+
+
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 apply plugin: 'com.google.gms.google-services'
