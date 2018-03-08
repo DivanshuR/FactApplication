@@ -10,9 +10,6 @@ android {
         applicationId "com.rohatgi.developer.factcheck"
         minSdkVersion 16
         targetSdkVersion 26
-        versionCode 3
-        multiDexEnabled true
-        versionName "2.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -50,6 +47,8 @@ dependencies {
     // dependency file for RecyclerView
     compile 'com.github.medyo:android-about-page:1.2.2'
     compile 'de.hdodenhof:circleimageview:2.2.0'
+    compile 'me.wangyuwei:ParticleView:1.0.4'
+
 }
 
 apply plugin: 'com.google.gms.google-services'
