@@ -1,7 +1,7 @@
 apply plugin: 'com.android.application'
 
 android {
-  
+
     dexOptions {
         javaMaxHeapSize "4g"
     }
@@ -21,9 +21,14 @@ android {
             shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+        debug {
+            debuggable true
+        }
     }
     aaptOptions {
         cruncherEnabled = false
+    }
+    productFlavors {
     }
 }
 
@@ -44,21 +49,7 @@ dependencies {
     compile 'com.android.support:recyclerview-v7:26.1.0'
     // dependency file for RecyclerView
     compile 'com.github.medyo:android-about-page:1.2.2'
-    compile 'com.github.florent37:diagonallayout:1.0.7'
-
     compile 'de.hdodenhof:circleimageview:2.2.0'
-
 }
-
-
-
-
-
-
-
-
-
-
-
 
 apply plugin: 'com.google.gms.google-services'
