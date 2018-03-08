@@ -1,14 +1,7 @@
 apply plugin: 'com.android.application'
 
 android {
-    signingConfigs {
-        FactSign {
-            keyAlias 'FactAlias'
-            keyPassword 'Desmond12'
-            storeFile file('D:/Divanshu/FactKeyStore/FactKey.jks')
-            storePassword 'Desmond12'
-        }
-    }
+ 
     dexOptions {
         javaMaxHeapSize "4g"
     }
