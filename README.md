@@ -1,5 +1,6 @@
-# FactApplication will be changing its application name to NumbersEncyclopedia for more clarity in what it does.
+# FactApplication is the NumbersEncyclopedia Where it checks/tells facts behind every number.
 
-Will update soon on PlayStore , fornow install and review with the old name: FactCheck.
+Updating UI and fixed minor bugs. 
+Search it on play store : factcheck
 
 
