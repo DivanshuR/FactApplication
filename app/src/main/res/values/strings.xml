@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">NumbersEncyclopedia</string>
+    <string name="app_name">FactCheck</string>
 
     <string name="banner_ad_unit_id">ca-app-pub-4940287222885522/6932861595</string>
 
@@ -8,8 +8,8 @@
     <string name="math">Math Fact</string>
     <string name="year">Year Fact</string>
     <string name="date">Date Fact</string>
+    <string name="quiz">Quiz Coming Soon....</string>
 
-    <string name="explore_btn">Explore</string>
-    <string name="frontText">Numbers-Encyclopedia</string>
+    <string name="explore_btn">Search</string>
     <string name="Error_Message">Sorry.This App Only Understands Numbers.</string>
 </resources>

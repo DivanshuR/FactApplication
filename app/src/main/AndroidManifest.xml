@@ -28,7 +28,6 @@
         <activity android:name=".DateActivity" />
         <activity android:name=".AboutActivity" />
         <activity android:name=".FeedbackActivity" />
-        <activity android:name=".MainActivity" />
         <activity android:name=".DesignActivity"></activity>
     </application>
 

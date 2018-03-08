@@ -17,7 +17,7 @@
     android:layout_marginLeft="20dp"
     android:layout_marginRight="20dp"
     app:cardCornerRadius="5dp"
-    android:layout_marginBottom="85dp"
+    android:layout_marginBottom="80dp"
     app:cardBackgroundColor="#fff">
 
     <EditText
@@ -33,9 +33,9 @@
 <Button
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:background="#d9790b"
     android:layout_marginTop="80dp"
-    android:text="Search"
+    android:text="@string/explore_btn"
+    android:background="@drawable/shape"
     android:padding="5dp"
     android:textAllCaps="false"
     android:textSize="20sp"
@@ -53,7 +53,7 @@
         android:layout_marginTop="160dp"
         app:cardElevation="50dp"
         app:cardBackgroundColor="#3c76e1"
-        app:cardCornerRadius="15dp"
+        app:cardCornerRadius="12dp"
         >
 
         <TextView
@@ -61,6 +61,7 @@
             android:layout_height="match_parent"
             android:gravity="fill_horizontal"
             android:textSize="22sp"
+            android:textAlignment="center"
             android:id="@+id/show"
             android:textColor="@color/colorWhite"
             android:layout_margin="12dp"/>
@@ -85,7 +86,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="15dp"
+        android:layout_marginBottom="10dp"
         app:adSize="BANNER"
         app:adUnitId="@string/banner_ad_unit_id"
         app:cardElevation="10dp">

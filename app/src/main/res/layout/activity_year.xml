@@ -18,7 +18,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         app:cardCornerRadius="5dp"
-        android:layout_marginBottom="85dp"
+        android:layout_marginBottom="80dp"
         app:cardBackgroundColor="#fff">
 
 <TextView
@@ -44,9 +44,9 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="#2c7e54"
+            android:text="@string/explore_btn"
+            android:background="@drawable/shape"
             android:layout_marginTop="80dp"
-            android:text="Search"
             android:padding="5dp"
             android:textAllCaps="false"
             android:textSize="20sp"
@@ -64,7 +64,7 @@
             android:layout_marginTop="160dp"
             app:cardElevation="50dp"
             app:cardBackgroundColor="#3c76e1"
-            app:cardCornerRadius="15dp"
+            app:cardCornerRadius="12dp"
             >
 
             <TextView
@@ -73,6 +73,7 @@
                 android:gravity="fill_horizontal"
                 android:textSize="22sp"
                 android:id="@+id/show"
+                android:textAlignment="center"
                 android:textColor="@color/colorWhite"
                 android:layout_margin="12dp"/>
 
@@ -96,7 +97,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="15dp"
+        android:layout_marginBottom="10dp"
         app:adSize="BANNER"
         app:adUnitId="@string/banner_ad_unit_id"
         app:cardElevation="10dp">
