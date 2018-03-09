@@ -1,14 +1,7 @@
 apply plugin: 'com.android.application'
 
 android {
-    signingConfigs {
-        FactSign {
-            keyAlias 'FactAlias'
-            keyPassword 'Desmond12'
-            storeFile file('D:/Divanshu/FactKeyStore/FactKey.jks')
-            storePassword 'Desmond12'
-        }
-    }
+
     dexOptions {
         javaMaxHeapSize "4g"
     }
@@ -58,6 +51,5 @@ dependencies {
     compile 'com.github.medyo:android-about-page:1.2.2'
     compile 'de.hdodenhof:circleimageview:2.2.0'
 }
-
 
 apply plugin: 'com.google.gms.google-services'
