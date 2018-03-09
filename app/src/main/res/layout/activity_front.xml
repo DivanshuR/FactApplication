@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash"
+    tools:context="com.rohatgi.developer.factcheck.FrontActivity">
+
+
+
+    <!--<me.wangyuwei.particleview.ParticleView-->
+        <!--android:id="@+id/front_text"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--app:pv_background_color="#e1234f"-->
+        <!--app:pv_particle_text="Check"-->
+        <!--app:pv_particle_text_size="22sp"-->
+        <!--app:pv_text_color="#FFF"-->
+        <!--app:pv_host_text="Fact"-->
+        <!--app:pv_text_anim_time="2000"-->
+        <!--app:pv_spread_anim_time="1500"-->
+        <!--app:pv_host_text_size="28sp"-->
+        <!--app:pv_host_text_anim_time="2000" />-->
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/splash"/>
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
+
+
