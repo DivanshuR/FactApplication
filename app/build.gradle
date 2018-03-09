@@ -50,6 +50,8 @@ dependencies {
     // dependency file for RecyclerView
     compile 'com.github.medyo:android-about-page:1.2.2'
     compile 'de.hdodenhof:circleimageview:2.2.0'
+    compile 'me.wangyuwei:ParticleView:1.0.4'
+
 }
 
 apply plugin: 'com.google.gms.google-services'
