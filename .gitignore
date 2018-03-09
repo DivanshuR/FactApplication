@@ -7,4 +7,6 @@
 /build
 /captures
 .externalNativeBuild
-/build.gradle
+/app/release
+
+

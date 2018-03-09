@@ -12,7 +12,7 @@
         android:icon="@drawable/doubt"
         android:label="@string/app_name"
         android:largeHeap="true"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_fact_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".FrontActivity">
